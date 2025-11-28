@@ -20,6 +20,12 @@ pipeline{
             steps{
                 sh 'uptime'
             }
+            stage('disk usage')
+        {
+            steps{
+                sh 'df -h'
+            }
+        }
             
         }
     }
